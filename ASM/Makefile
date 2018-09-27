@@ -6,7 +6,7 @@
 #    By: chuang <chuang@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/04/13 19:37:28 by chuang            #+#    #+#              #
-#    Updated: 2018/08/07 18:44:38 by chuang           ###   ########.fr        #
+#    Updated: 2018/09/12 18:46:58 by chuang           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ CFLAGS += -Wall -Werror -Wextra
 
 COLLEENSRC = Colleen.s
 
-GRACESRC = hello.s
+GRACESRC = Grace.s
 
 SULLYSRC = Sully.s
 
@@ -43,7 +43,7 @@ $(COLLEEN): $(COLLEENOBJ)
 	ld $(COLLEEN).o -lc -o $(COLLEEN) $(CRT)
 $(GRACE): $(GRACEOBJ)
 	ld $(GRACE).o -lc -o $(GRACE)  $(CRT)
-$(SULLY): $(SULLY)
+$(SULLY): $(SULLYOBJ)
 	ld $(SULLY).o -lc -o $(SULLY) $(CRT)
 
 
